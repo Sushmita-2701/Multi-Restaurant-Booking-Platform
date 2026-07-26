@@ -1,23 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surface: #f9f9f9;
+  /* White Theme */
+  --color-surface: #f9fafb;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f3f3f4;
-  --color-on-surface: #1a1c1c;
-  --color-outline-variant: #c4c7c7;
-  --color-primary: #000000;
+  --color-surface-container-low: #f3f4f6;
+  --color-on-surface: #111827;
+
+  /* Borders */
+  --color-outline-variant: #d1d5db;
+
+  /* Primary Blue */
+  --color-primary: #2563eb;
   --color-on-primary: #ffffff;
-  --color-primary-container: #1c1b1b;
-  --color-on-primary-container: #858383;
-  --color-secondary: #775a19;
+  --color-primary-container: #dbeafe;
+  --color-on-primary-container: #1d4ed8;
+
+  /* Secondary Blue */
+  --color-secondary: #1d4ed8;
   --color-on-secondary: #ffffff;
-  --color-secondary-container: #fed488;
-  --color-on-secondary-container: #785a1a;
-  --color-error: #ba1a1a;
+  --color-secondary-container: #bfdbfe;
+  --color-on-secondary-container: #1e40af;
+
+  /* Error */
+  --color-error: #dc2626;
   --color-on-error: #ffffff;
-  --color-error-container: #ffdad6;
-  --color-on-error-container: #93000a;
+  --color-error-container: #fee2e2;
+  --color-on-error-container: #991b1b;
 
   /* Fonts */
   --font-display: "Playfair Display", serif;
@@ -26,11 +35,14 @@
 
 body {
   font-family: var(--font-body);
+  background: #ffffff;
+  color: #111827;
 }
 
 /* Custom Design Utilities */
+
 .ambient-shadow {
-  box-shadow: 0 30px 60px -15px rgba(26, 26, 26, 0.04);
+  box-shadow: 0 30px 60px -15px rgba(37, 99, 235, 0.08);
 }
 
 .transition-soft {
@@ -38,29 +50,32 @@ body {
 }
 
 .card-hover-effect {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-hover-effect:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(26, 26, 26, 0.06);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
 }
 
-/* Custom Scrollbar for premium visual */
+/* Custom Scrollbar */
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f9f9f9;
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dadada;
+  background: #2563eb;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c5a059;
+  background: #1d4ed8;
 }

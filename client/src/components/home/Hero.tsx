@@ -27,13 +27,13 @@ export default function Hero() {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <img alt="Elegant Dining Room" className="w-full h-full object-cover brightness-70" src={assets.hero_bg_img} />
+                <img alt="Elegant Dining Room" className="w-full h-full object-cover brightness-70" src={assets.home_logo} />
                 <div className="absolute inset-0"></div>
             </div>
 
             {/* Content */}
             <div className="relative z-10 w-full max-w-7xl px-6 md:px-10 text-center">
-                <span className="text-sm text-secondary-container tracking-[0.25em] uppercase block mb-4">
+                <span className="text-sm text-blue-600 tracking-[0.25em] uppercase block mb-4">
                     EXQUISITE DINING EXPERIENCES
                 </span>
                 <h1 className="font-display text-4xl md:text-6xl text-white mb-12 max-w-3xl mx-auto leading-[1.15] font-medium tracking-tight drop-shadow-md">
