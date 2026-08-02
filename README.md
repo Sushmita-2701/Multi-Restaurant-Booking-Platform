@@ -96,13 +96,6 @@ npm run dev
 
 8. Open your browser and go to `http://localhost:3000` (or whatever port your app uses)
 
-## 🌍 Live Demo
-
-Add your live demo link here once deployed (e.g. Vercel/Render link).
-
-## 📸 Screenshots
-
-Add screenshots of your app here so people can see how it looks.
 
 ## 🤝 Contributing
 
