@@ -50,10 +50,16 @@ export const createOwnerRestaurant = async (req: AuthRequest, res: Response): Pr
             availableSlots
         } = req.body;
 
-        if (!name || !description || !priceRange || !tags || !location || !chef || !image || !address || !cuisine ) {
-            res.status(400).json({ message: "Please provide all required fields" });
-            return;
-        }
+    
+if (!name || !description || !priceRange || !tags || !location || !chef || !address || !cuisine) {
+    res.status(400).json({ message: "Please provide all required fields" });
+    return;
+}
+
+if (!req.file) {
+    res.status(400).json({ message: "Please upload a restaurant image" });
+    return;
+}
         const slug = name.toLowerCase().replace(/[^-a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
         const slugExists = await Restaurant.findOne({ slug });
@@ -96,13 +102,18 @@ export const createOwnerRestaurant = async (req: AuthRequest, res: Response): Pr
         res.status(400).json({ message: error.message });
     }
 };
-export const updateOwnerRestaurant = async (req: AuthRequest, res: Response): Promise<void> => {
+export const updateOwnerRestaurant = async (
+    req: AuthRequest,
+    res: Response
+): Promise<void> => {
     try {
-        const restaurant = await Restaurant.findOne({ owner: req.user?._id })
+        const restaurant = await Restaurant.findOne({ owner: req.user?._id });
+
         if (!restaurant) {
             res.status(404).json({ message: "Restaurant profile not found" });
             return;
         }
+
         const {
             name,
             description,
@@ -124,29 +135,36 @@ export const updateOwnerRestaurant = async (req: AuthRequest, res: Response): Pr
         if (location) restaurant.location = location;
         if (address) restaurant.address = address;
         if (chef) restaurant.chef = chef;
+        if (image) restaurant.image = image;
         if (totalSeats) restaurant.totalSeats = Number(totalSeats);
 
         if (tags) {
-            restaurant.tags = typeof tags === "string" ? tags.split(",").map((t) => t.trim()) : tags;
+            restaurant.tags =
+                typeof tags === "string"
+                    ? tags.split(",").map((t) => t.trim())
+                    : tags;
         }
 
         if (availableSlots) {
-            restaurant.availableSlotes =
-                typeof availableSlots === "string" ? availableSlots.split(",").map((s) => s.trim()) :
-                    availableSlots;
+            restaurant.availableSlots =
+                typeof availableSlots === "string"
+                    ? availableSlots.split(",").map((s) => s.trim())
+                    : availableSlots;
         }
 
         if (req.file) {
             const result = await uploadToCloudinary(req.file.buffer);
-            restaurant.image= result.secure_url;
+            restaurant.image = result.secure_url;
         }
-        const updated = await restaurant.save()
 
+        const updated = await restaurant.save();
+
+        res.json(updated);
     } catch (error: any) {
         console.error(error);
         res.status(400).json({ message: error.message });
     }
-}
+};
 
 export const getOwnerBookings = async (req: AuthRequest, res: Response): Promise<void> => {
     try {

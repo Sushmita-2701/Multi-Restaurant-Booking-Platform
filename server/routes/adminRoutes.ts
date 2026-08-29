@@ -7,7 +7,7 @@ const adminRouter = Router()
 adminRouter.use(protect)
 adminRouter.use(adminOnly)
 
-adminRouter.get("/restarant", getAllRestaurants)
+adminRouter.get("/restaurant", getAllRestaurants)
 adminRouter.put("/restaurants/:id/approve", approveRestaurants)
 adminRouter.get("/stats", getAdminStats)
 

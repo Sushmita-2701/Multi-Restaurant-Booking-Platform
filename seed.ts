@@ -174,7 +174,7 @@ const updateRestaurantsData = restaurantsData.map((rest, idx)=>{
     return{
         ...restInfo,
         owner:ownerUser._id,
-        status:"approved",
+        status:"open",
         totalSeats: 20 + idx * 5,
     }
 })

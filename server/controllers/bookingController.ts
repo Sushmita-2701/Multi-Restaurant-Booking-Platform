@@ -19,8 +19,8 @@ export const createBooking = async (req, res: Response): Promise<void> => {
             res.status(404).json({ message: "Restaurant not found" });
             return;
         }
-        if (restaurant.status !== "open") {
-            res.status(400).json({ message: "Restaurant is not open for bookings" });
+        if (restaurant.status !== "approved") {
+            res.status(400).json({ message: "Restaurant is not approved for bookings" });
             return;
         }
         const requestedGuests = Number(guests);
