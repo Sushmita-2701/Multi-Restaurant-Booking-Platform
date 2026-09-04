@@ -57,7 +57,7 @@ export default function Header({
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="text-2xl font-bold tracking-tight text-stone-900 font-serif">
-                  Dine<span className="text-amber-600">Table</span>
+                Hungry<span className="text-amber-600">Bear</span>
                 </span>
                 <span className="bg-amber-100 text-amber-800 text-[10px] font-bold px-1.5 py-0.5 rounded tracking-wide uppercase">
                   Reservations

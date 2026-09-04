@@ -1,81 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /* White Theme */
-  --color-surface: #f9fafb;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f3f4f6;
-  --color-on-surface: #111827;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+}
 
-  /* Borders */
-  --color-outline-variant: #d1d5db;
-
-  /* Primary Blue */
-  --color-primary: #2563eb;
-  --color-on-primary: #ffffff;
-  --color-primary-container: #dbeafe;
-  --color-on-primary-container: #1d4ed8;
-
-  /* Secondary Blue */
-  --color-secondary: #1d4ed8;
-  --color-on-secondary: #ffffff;
-  --color-secondary-container: #bfdbfe;
-  --color-on-secondary-container: #1e40af;
-
-  /* Error */
-  --color-error: #dc2626;
-  --color-on-error: #ffffff;
-  --color-error-container: #fee2e2;
-  --color-on-error-container: #991b1b;
-
-  /* Fonts */
-  --font-display: "Playfair Display", serif;
-  --font-body: "Outfit", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-body);
-  background: #ffffff;
-  color: #111827;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #1c1917;
+  background-color: #faf9f6;
 }
 
-/* Custom Design Utilities */
-
-.ambient-shadow {
-  box-shadow: 0 30px 60px -15px rgba(37, 99, 235, 0.08);
+/* Hide scrollbar for clean horizontal scroll chips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
-
-.transition-soft {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.card-hover-effect {
-  transition:
-    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.card-hover-effect:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
-}
-
-/* Custom Scrollbar */
-
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #2563eb;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #1d4ed8;
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
