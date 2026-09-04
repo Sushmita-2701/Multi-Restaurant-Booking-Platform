@@ -23,3 +23,13 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+select option {
+  color: #1c1917 !important;
+  background-color: #ffffff !important;
+}
+
+select option:hover,
+select option:checked {
+  background-color: #ffffff !important;
+  color: #1c1917 !important;
+}

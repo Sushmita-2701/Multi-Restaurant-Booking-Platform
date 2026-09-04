@@ -53,14 +53,13 @@ export default function Hero({
       {/* Background Image with Dark Vignette Gradient */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80"
-          alt="Fine Dining Restaurant Ambience"
+          src="https://plus.unsplash.com/premium_photo-1681841594224-ad729a249113?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
           className="w-full h-full object-cover object-center opacity-30 scale-105 transform animate-in fade-in duration-1000"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/80 to-stone-950/50" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-28">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20 sm:pt-10 sm:pb-28">
         {/* Top Tagline Badge */}
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-300 px-4 py-1.5 rounded-full text-xs font-semibold backdrop-blur-sm">
@@ -70,18 +69,20 @@ export default function Hero({
         </div>
 
         {/* Main Heading */}
-        <div className="text-center max-w-4xl mx-auto space-y-4">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight font-serif leading-tight">
-            Reserve Unforgettable Tables at{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500">
-              Top-Rated Restaurants
-            </span>
-          </h1>
-          <p className="text-stone-300 text-sm sm:text-lg max-w-2xl mx-auto font-light leading-relaxed">
-            Discover award-winning tasting menus, intimate neighborhood bistros, and vibrant rooftop lounges. 
-            Guaranteed instant booking with zero reservation fees.
-          </p>
-        </div>
+{/* Main Heading */}
+<div className="text-center max-w-4xl mx-auto">
+  <h1 className="m-0 text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight font-serif leading-none">
+    Reserve Unforgettable Tables at{' '}
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500">
+      Top-Rated Restaurants
+    </span>
+  </h1>
+
+  <p className="m-0 mt-0 text-stone-300 text-sm sm:text-lg max-w-2xl mx-auto font-light leading-normal">
+    Discover award-winning tasting menus, intimate neighborhood bistros, and vibrant rooftop lounges.
+    Guaranteed instant booking with zero reservation fees.
+  </p>
+</div>
 
         {/* Interactive Search Bar Widget */}
         <div className="mt-10 max-w-5xl mx-auto bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-3 sm:p-4 text-stone-900 shadow-2xl border border-stone-100/30">
@@ -99,9 +100,17 @@ export default function Hero({
                   className="w-full bg-transparent text-xs sm:text-sm font-semibold text-stone-900 focus:outline-none cursor-pointer"
                 >
                   {NEIGHBORHOODS.map((item) => (
-                    <option key={item} value={item === 'All Neighborhoods' ? '' : item} className="text-stone-900">
-                      {item}
-                    </option>
+                   <option
+  key={item}
+  value={item === 'All Neighborhoods' ? '' : item}
+  className="bg-white text-black"
+  style={{
+    color: '#1a1918',
+    backgroundColor: '#ffffff',
+  }}
+>
+  {item}
+</option>
                   ))}
                 </select>
               </div>
@@ -120,9 +129,17 @@ export default function Hero({
                   className="w-full bg-transparent text-xs sm:text-sm font-semibold text-stone-900 focus:outline-none cursor-pointer"
                 >
                   {CUISINE_OPTIONS.map((item) => (
-                    <option key={item} value={item === 'All Cuisines' ? '' : item} className="text-stone-900">
-                      {item}
-                    </option>
+                    <option
+  key={item}
+  value={item === 'All Cuisines' ? '' : item}
+  className="bg-white text-black"
+  style={{
+    color: '#1c1917',
+    backgroundColor: '#ffffff',
+  }}
+>
+  {item}
+</option>
                   ))}
                 </select>
               </div>
@@ -160,13 +177,33 @@ export default function Hero({
                   onChange={(e) => onFilterChange({ guests: Number(e.target.value) })}
                   className="w-full bg-transparent text-xs sm:text-sm font-semibold text-stone-900 focus:outline-none cursor-pointer"
                 >
-                  <option value={1}>1 Guest (Solo)</option>
-                  <option value={2}>2 Guests (Table for Two)</option>
-                  <option value={3}>3 Guests</option>
-                  <option value={4}>4 Guests (Small Party)</option>
-                  <option value={5}>5 Guests</option>
-                  <option value={6}>6 Guests (Large Group)</option>
-                  <option value={8}>8+ Guests (Banquet)</option>
+                <option value={1} style={{ color: '#1c1917', backgroundColor: '#ffffff' }}>
+  1 Guest (Solo)
+</option>
+
+<option value={2} style={{ color: '#1c1917', backgroundColor: '#ffffff' }}>
+  2 Guests (Table for Two)
+</option>
+
+<option value={3} style={{ color: '#1c1917', backgroundColor: '#ffffff' }}>
+  3 Guests
+</option>
+
+<option value={4} style={{ color: '#1c1917', backgroundColor: '#ffffff' }}>
+  4 Guests (Small Party)
+</option>
+
+<option value={5} style={{ color: '#1c1917', backgroundColor: '#ffffff' }}>
+  5 Guests
+</option>
+
+<option value={6} style={{ color: '#1c1917', backgroundColor: '#ffffff' }}>
+  6 Guests (Large Group)
+</option>
+
+<option value={8} style={{ color: '#1c1917', backgroundColor: '#ffffff' }}>
+  8+ Guests (Banquet)
+</option>
                 </select>
               </div>
             </div>
