@@ -246,7 +246,7 @@ export default function App() {
             <div className="flex flex-wrap items-center gap-2 sm:gap-3">
               {/* Price Tier Filter */}
               <div className="flex items-center bg-white rounded-xl border border-stone-200 p-1 text-xs">
-                {['', '$$', '$$$', '$$$$'].map((tier) => (
+                {['', '₹₹', '₹₹₹', '₹₹₹₹'].map((tier) => (
                   <button
                     key={tier}
                     onClick={() => handleFilterChange({ priceFilter: tier })}
@@ -355,7 +355,7 @@ export default function App() {
         {/* 5. Featured Special Dining Privileges */}
         <SpecialOffers onOpenBookingForRestaurant={handleOpenBookingForRestaurantId} />
 
-        {/* 6. How DineTable Works & Seating Guarantee */}
+       
         <HowItWorks />
       </main>
 

@@ -58,7 +58,7 @@ console.log("Creating resturants...");
         description:
             "An intimate, Parisian-inspired fine dining chamber wrapped in dark velvet and soft golden candle glow. L'Essence specializes in meticulous plating of haute gastronomy, creating a rich sensory dialogue between modern culinary innovation and classic romance.",
         cuisine: "French",
-        priceRange: "$$$$",
+        priceRange: "₹₹₹₹",
         rating: 4.9,
         reviewCount: 88,
         location: "Manhattan, NY",
@@ -77,7 +77,7 @@ console.log("Creating resturants...");
         description:
             "A sun-drenched rooftop oasis celebrating Italian and Mediterranean lifestyles. Featuring floor-to-ceiling foliage, white marble bistro tables, and panoramic skyline views, Terraza Cielo serves hand-crafted pastas and coastal seafood paired with bright botanical cocktails.",
         cuisine: "Italian",
-        priceRange: "$$$",
+        priceRange: "₹₹₹",
         rating: 4.7,
         reviewCount: 205,
         location: "Manhattan, NY",
@@ -96,7 +96,7 @@ console.log("Creating resturants...");
         description:
             "An atmospheric, moody sanctuary of premium Japanese gastronomy. Seated at a dark, polished basalt-stone counter, guests experience a deeply focused sushi omakase. Chef Kenji Sato translates the freshest seasonal ingredients directly from Tokyo's fish markets into elegant, edible poetry.",
         cuisine: "Japanese",
-        priceRange: "$$$$",
+        priceRange: "₹₹₹₹",
         rating: 4.8,
         reviewCount: 92,
         location: "Manhattan, NY",
@@ -115,7 +115,7 @@ console.log("Creating resturants...");
         description:
             "A bright, airy conservatory celebrating organic, plant-forward gastronomy. Nestled under glass ceilings with floor-to-ceiling botanicals, Flora Garden transforms fresh seasonal crops into delicate, high-end editorial culinary works of art.",
         cuisine: "Vegetarian",
-        priceRange: "$$$",
+        priceRange: "₹₹₹",
         rating: 4.8,
         reviewCount: 110,
         location: "Manhattan, NY",
@@ -134,7 +134,7 @@ console.log("Creating resturants...");
         description:
             "An upscale modern steakhouse with exposed brick walls, leather booths, and warm, industrial-chic pendant lighting. Offering Prime dry-aged cuts grilled over live hickory and cherrywood embers. Gourmet dining elevated into a sophisticated nocturnal experience.",
         cuisine: "Steakhouse",
-        priceRange: "$$$$",
+        priceRange: "₹₹₹₹",
         rating: 4.6,
         reviewCount: 142,
         location: "Manhattan, NY",
@@ -154,7 +154,7 @@ console.log("Creating resturants...");
         description:
             "A sun-drenched rooftop oasis celebrating Italian and Mediterranean lifestyles. Featuring floor-to-ceiling foliage, white marble bistro tables, and panoramic skyline views, Terraza Cielo serves hand-crafted pastas and coastal seafood paired with bright botanical cocktails.",
         cuisine: "Italian",
-        priceRange: "$$$",
+        priceRange: "₹₹₹",
         rating: 4.7,
         reviewCount: 205,
         location: "Manhattan, NY",

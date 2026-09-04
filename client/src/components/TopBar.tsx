@@ -6,7 +6,7 @@ export default function TopBar() {
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-around gap-y-1.5 text-center">
         <div className="flex items-center gap-2">
           <Truck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#94a38e]" />
-          <span>Free Shipping on Orders Over $50</span>
+          <span>Free Shipping on Orders Over 500</span>
         </div>
         <div className="hidden sm:flex items-center gap-2">
           <RotateCcw className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#94a38e]" />

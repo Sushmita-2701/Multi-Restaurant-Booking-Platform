@@ -23,7 +23,7 @@ export interface Restaurant {
   cuisine: string;
   rating: number;
   reviewCount: number;
-  priceRange: '$$' | '$$$' | '$$$$';
+  priceRange: '₹₹' | '₹₹₹' | '₹₹₹₹';
   neighborhood: string;
   city: string;
   address: string;

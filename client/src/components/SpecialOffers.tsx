@@ -41,7 +41,7 @@ const OFFERS = [
     discount: 'Chef Gift',
     icon: Gift,
     badge: 'Omakase Special',
-    desc: 'Complimentary A5 Wagyu tartare starter included with all counter seatings reserved through DineTable.',
+    desc: 'Complimentary A5 Wagyu tartare starter included with all counter seatings reserved through HungryBear.',
     validUntil: 'Valid this Month',
     code: 'OMAKASEVIP',
     image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80',
@@ -66,7 +66,7 @@ export default function SpecialOffers({ onOpenBookingForRestaurant }: SpecialOff
               Featured Dining Privileges
             </h2>
             <p className="text-stone-400 text-sm mt-2 max-w-xl">
-              Special incentives, complimentary chef tastings, and dining discounts unlocked when reserving via DineTable.
+              Special incentives, complimentary chef tastings, and dining discounts unlocked when reserving via HungryBear.
             </p>
           </div>
         </div>

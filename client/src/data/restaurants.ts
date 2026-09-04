@@ -4,58 +4,67 @@ export const CUISINES: CuisineCategory[] = [
   {
     id: 'italian',
     name: 'Italian',
-    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 42,
     tagline: 'Handmade pasta, wood-fired truffles & Chianti',
   },
   {
     id: 'japanese',
     name: 'Japanese & Sushi',
-    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 38,
     tagline: 'Omakase counters, fresh sashimi & robata grills',
   },
   {
     id: 'french',
     name: 'French Bistro',
-    image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 29,
     tagline: 'Classic haute cuisine, confit & vintage wines',
   },
   {
     id: 'indian',
     name: 'Royal Indian',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 34,
     tagline: 'Clay oven delicacies, aromatic curries & saffron biryanis',
   },
   {
     id: 'steakhouse',
     name: 'Steakhouse & Grill',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 26,
     tagline: 'Dry-aged Wagyu, prime cuts & smoky bourbon pairings',
   },
   {
     id: 'mediterranean',
     name: 'Mediterranean & Greek',
-    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 31,
     tagline: 'Wood-roasted branzino, mezze platters & olive oil infusions',
   },
   {
     id: 'mexican',
     name: 'Modern Mexican',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 22,
     tagline: 'Artisanal moles, blue corn tortillas & agave cocktails',
   },
   {
     id: 'seafood',
     name: 'Coastal Seafood',
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80',
+    image:
+      'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80',
     restaurantCount: 19,
-    tagline: 'Fresh shucked oysters, king crab legs & chilled crisp chardonnay',
+    tagline:
+      'Fresh shucked oysters, king crab legs & chilled crisp chardonnay',
   },
 ];
 
@@ -67,12 +76,13 @@ export const RESTAURANTS: Restaurant[] = [
     cuisine: 'French Bistro',
     rating: 4.9,
     reviewCount: 342,
-    priceRange: '$$$$',
+    priceRange: '₹₹₹₹',
     neighborhood: 'Downtown Heritage Quarter',
     city: 'Metropolis',
     address: '428 Boulevard Saint-Germain, Downtown',
     distance: '0.8 miles away',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
+    image:
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80',
@@ -81,76 +91,103 @@ export const RESTAURANTS: Restaurant[] = [
     featured: true,
     trending: true,
     michelinGuide: true,
-    tags: ['Michelin Guide', 'Romantic', 'Rooftop', 'Wine Cellar', 'Valet Parking'],
-    availableSlots: ['5:30 PM', '6:15 PM', '7:00 PM', '7:45 PM', '8:30 PM', '9:15 PM'],
-    description: 'Perched high above the city with panoramic skyline vistas, L’Aura Parisienne pairs classical French culinary techniques with innovative modern gastronomy. Led by Executive Chef Julien Laurent, every dish is an artful homage to terroir.',
+    tags: [
+      'Michelin Guide',
+      'Romantic',
+      'Rooftop',
+      'Wine Cellar',
+      'Valet Parking',
+    ],
+    availableSlots: [
+      '5:30 PM',
+      '6:15 PM',
+      '7:00 PM',
+      '7:45 PM',
+      '8:30 PM',
+      '9:15 PM',
+    ],
+    description:
+      'Perched high above the city with panoramic skyline vistas, L’Aura Parisienne pairs classical French culinary techniques with innovative modern gastronomy. Led by Executive Chef Julien Laurent, every dish is an artful homage to terroir.',
     chef: 'Chef Julien Laurent (Ex-L’Astrance Paris)',
     hours: 'Tue - Sun: 5:00 PM - 11:30 PM',
     dressCode: 'Smart Casual / Elegant',
     parking: 'Complimentary Valet at Main Entrance',
     phone: '+1 (555) 234-8890',
+
     menu: [
       {
         name: 'Pan-Seared Foie Gras & Brioche',
-        price: '$34',
+        price: '₹3,200',
         category: 'Starters',
-        description: 'Black mission fig gastrique, caramelized shallot purée, and toasted artisanal brioche.',
+        description:
+          'Black mission fig gastrique, caramelized shallot purée, and toasted artisanal brioche.',
         tag: 'Signature',
       },
       {
         name: 'Diver Sea Scallops Carpaccio',
-        price: '$28',
+        price: '₹2,600',
         category: 'Starters',
-        description: 'Finger lime pearls, oscietra caviar, yuzu vinaigrette, and compressed cucumber ribbons.',
+        description:
+          'Finger lime pearls, oscietra caviar, yuzu vinaigrette, and compressed cucumber ribbons.',
       },
       {
         name: 'Crispy Skin Duck Magret',
-        price: '$52',
+        price: '₹4,900',
         category: 'Mains',
-        description: 'Honey spiced lavender glaze, baby parsnip fondant, and sour cherry reduction.',
+        description:
+          'Honey spiced lavender glaze, baby parsnip fondant, and sour cherry reduction.',
         tag: 'Chef Pick',
       },
       {
         name: 'Beef Tenderloin Rossini',
-        price: '$68',
+        price: '₹6,400',
         category: 'Mains',
-        description: 'A5 Wagyu beef, seared foie gras, perigord black winter truffle shaving, pomme puree.',
+        description:
+          'A5 Wagyu beef, seared foie gras, perigord black winter truffle shaving, pomme puree.',
         tag: 'Signature',
       },
       {
         name: 'Grand Marnier Soufflé',
-        price: '$22',
+        price: '₹2,100',
         category: 'Desserts',
-        description: 'Fluffy golden soufflé accompanied by vanilla bean creme anglaise and candied orange peel.',
+        description:
+          'Fluffy golden soufflé accompanied by vanilla bean creme anglaise and candied orange peel.',
       },
       {
         name: 'Dark Chocolate Ganache Sphere',
-        price: '$20',
+        price: '₹1,900',
         category: 'Desserts',
-        description: 'Single-origin Valrhona chocolate, salted caramel center, gold dust.',
+        description:
+          'Single-origin Valrhona chocolate, salted caramel center, gold dust.',
       },
     ],
+
     reviews: [
       {
         id: 'rev-1',
         userName: 'Eleanor Vance',
-        userAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
+        userAvatar:
+          'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
         rating: 5,
         date: '3 days ago',
-        comment: 'An absolute masterpiece of an evening. The Duck Magret paired with their 2018 Bordeaux was perfection. The table overlooking the skyline made our anniversary unforgettable.',
+        comment:
+          'An absolute masterpiece of an evening. The Duck Magret paired with their 2018 Bordeaux was perfection. The table overlooking the skyline made our anniversary unforgettable.',
         tag: 'Anniversary Dinner',
       },
       {
         id: 'rev-2',
         userName: 'Marcus Sterling',
-        userAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+        userAvatar:
+          'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
         rating: 5,
         date: '1 week ago',
-        comment: 'Booking via DineTable was smooth as silk. Table was waiting the minute we stepped through the doors. The sommelier recommendations were spot on.',
+        comment:
+          'Booking via HungryBear was smooth as silk. Table was waiting the minute we stepped through the doors. The sommelier recommendations were spot on.',
         tag: 'Verified Diner',
       },
     ],
   },
+
   {
     id: 'omakase-kaze',
     name: 'Kaze Omakase & Sake Lounge',
@@ -158,12 +195,13 @@ export const RESTAURANTS: Restaurant[] = [
     cuisine: 'Japanese & Sushi',
     rating: 4.95,
     reviewCount: 289,
-    priceRange: '$$$$',
+    priceRange: '₹₹₹₹',
     neighborhood: 'SoHo Arts District',
     city: 'Metropolis',
     address: '112 Mercer Street, Lower Level',
     distance: '1.2 miles away',
-    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80',
+    image:
+      'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=800&q=80',
@@ -172,60 +210,77 @@ export const RESTAURANTS: Restaurant[] = [
     featured: true,
     trending: true,
     michelinGuide: true,
-    tags: ['Omakase Counter', 'Michelin Guide', 'Rare Sake', 'Chef Interaction'],
+    tags: [
+      'Omakase Counter',
+      'Michelin Guide',
+      'Rare Sake',
+      'Chef Interaction',
+    ],
     availableSlots: ['6:00 PM', '8:15 PM', '9:45 PM'],
-    description: 'A minimalist sanctuary dedicated to pristine wild fish flown in thrice weekly from Toyosu Market in Tokyo. Master Chef Kenji Takahashi guides diners through a 16-course sensory journey celebrating subtle seasonal transformations.',
+    description:
+      'A minimalist sanctuary dedicated to pristine wild fish flown in thrice weekly from Toyosu Market in Tokyo. Master Chef Kenji Takahashi guides diners through a 16-course sensory journey celebrating subtle seasonal transformations.',
     chef: 'Master Kenji Takahashi',
-    hours: 'Wed - Sun: 5:30 PM - 10:30 PM (Seatings at 6:00 PM & 8:15 PM)',
+    hours:
+      'Wed - Sun: 5:30 PM - 10:30 PM (Seatings at 6:00 PM & 8:15 PM)',
     dressCode: 'Smart Casual (No Fragrances)',
     parking: 'Public Garage on Crosby St.',
     phone: '+1 (555) 349-1122',
+
     menu: [
       {
         name: '16-Course Seasonal Omakase',
-        price: '$175',
+        price: '₹16,500',
         category: 'Chef Specials',
-        description: 'Daily selection of Toyosu market fish, Hokkaido Uni, Otoro with truffle salt, and A5 Miyazaki wagyu.',
+        description:
+          'Daily selection of Toyosu market fish, Hokkaido Uni, Otoro with truffle salt, and A5 Miyazaki wagyu.',
         tag: 'Signature',
       },
       {
         name: 'Botan Ebi with Caviar',
-        price: '$32',
+        price: '₹3,000',
         category: 'Starters',
-        description: 'Sweet spot prawn sashimi crowned with Royal Sturia caviar and shiso blossom.',
+        description:
+          'Sweet spot prawn sashimi crowned with Royal Sturia caviar and shiso blossom.',
       },
       {
         name: 'Smoked Otoro Nigiri',
-        price: '$26',
+        price: '₹2,500',
         category: 'Mains',
-        description: 'Bincho-tan lightly smoked fatty bluefin tuna glazed with 25-year aged nikiri soy.',
+        description:
+          'Bincho-tan lightly smoked fatty bluefin tuna glazed with 25-year aged nikiri soy.',
         tag: 'Chef Pick',
       },
       {
         name: 'Hokkaido Sea Urchin & Ikura Bowl',
-        price: '$45',
+        price: '₹4,200',
         category: 'Mains',
-        description: 'Creamy Bafun uni paired with dashi-cured salmon roe atop warm seasoned Akita sushi rice.',
+        description:
+          'Creamy Bafun uni paired with dashi-cured salmon roe atop warm seasoned Akita sushi rice.',
       },
       {
         name: 'Matcha Mille Crepe Cake',
-        price: '$18',
+        price: '₹1,700',
         category: 'Desserts',
-        description: 'Handcrafted with ceremonial Uji matcha and Madagascar vanilla bean chantilly.',
+        description:
+          'Handcrafted with ceremonial Uji matcha and Madagascar vanilla bean chantilly.',
       },
     ],
+
     reviews: [
       {
         id: 'rev-3',
         userName: 'Sophia Chen',
-        userAvatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80',
+        userAvatar:
+          'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80',
         rating: 5,
         date: 'Yesterday',
-        comment: 'Hands down the best Omakase in the state. Every single piece melted in our mouths. Watching Chef Kenji craft each nigiri is pure theatrical poetry.',
+        comment:
+          'Hands down the best Omakase in the state. Every single piece melted in our mouths. Watching Chef Kenji craft each nigiri is pure theatrical poetry.',
         tag: 'Verified Diner',
       },
     ],
   },
+
   {
     id: 'osteria-del-sole',
     name: 'Osteria Del Sole',
@@ -233,12 +288,13 @@ export const RESTAURANTS: Restaurant[] = [
     cuisine: 'Italian',
     rating: 4.85,
     reviewCount: 512,
-    priceRange: '$$$',
+    priceRange: '₹₹₹',
     neighborhood: 'Little Italy Promenade',
     city: 'Metropolis',
     address: '89 Mulberry Lane, Corner Walk',
     distance: '1.5 miles away',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80',
+    image:
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80',
@@ -247,60 +303,83 @@ export const RESTAURANTS: Restaurant[] = [
     featured: true,
     trending: false,
     michelinGuide: false,
-    tags: ['Handmade Pasta', 'Outdoor Patio', 'Extensive Wine List', 'Cozy Romantic'],
-    availableSlots: ['5:00 PM', '6:00 PM', '6:45 PM', '7:30 PM', '8:45 PM', '9:30 PM'],
-    description: 'Step into a rustic Florentine courtyard. Osteria Del Sole honors centuries of Italian heritage with pasta rolled fresh every morning, imported Parmigiano-Reggiano wheels, and warm rustic bread baked in an open wood oven.',
+    tags: [
+      'Handmade Pasta',
+      'Outdoor Patio',
+      'Extensive Wine List',
+      'Cozy Romantic',
+    ],
+    availableSlots: [
+      '5:00 PM',
+      '6:00 PM',
+      '6:45 PM',
+      '7:30 PM',
+      '8:45 PM',
+      '9:30 PM',
+    ],
+    description:
+      'Step into a rustic Florentine courtyard. Osteria Del Sole honors centuries of Italian heritage with pasta rolled fresh every morning, imported Parmigiano-Reggiano wheels, and warm rustic bread baked in an open wood oven.',
     chef: 'Chef Matteo Rossi',
     hours: 'Mon - Sun: 12:00 PM - 11:00 PM',
     dressCode: 'Casual Elegant',
     parking: 'Street Parking & Nearby Plaza Lot',
     phone: '+1 (555) 782-4411',
+
     menu: [
       {
         name: 'Burrata Pugliese con Fichi',
-        price: '$24',
+        price: '₹2,300',
         category: 'Starters',
-        description: 'Creamy artisanal burrata with roasted mission figs, San Daniele prosciutto 24-month, and aged balsamic glaze.',
+        description:
+          'Creamy artisanal burrata with roasted mission figs, San Daniele prosciutto 24-month, and aged balsamic glaze.',
         tag: 'Signature',
       },
       {
         name: 'Tagliolini al Tartufo Nero',
-        price: '$38',
+        price: '₹3,600',
         category: 'Mains',
-        description: 'Delicate egg yolk ribbon pasta swirled with Normandy butter and fresh shaved Norcia black truffles.',
+        description:
+          'Delicate egg yolk ribbon pasta swirled with Normandy butter and fresh shaved Norcia black truffles.',
         tag: 'Chef Pick',
       },
       {
         name: 'Bistecca alla Fiorentina (32oz)',
-        price: '$98',
+        price: '₹9,200',
         category: 'Mains',
-        description: 'Dry-aged Chianina T-bone grilled over hardwood embers, rosemary sea salt, and extra virgin olive oil.',
+        description:
+          'Dry-aged Chianina T-bone grilled over hardwood embers, rosemary sea salt, and extra virgin olive oil.',
       },
       {
         name: 'Pappardelle al Cinghiale',
-        price: '$32',
+        price: '₹3,000',
         category: 'Mains',
-        description: 'Slow-braised wild boar ragù, juniper berry essence, and 36-month grated Pecorino Toscano.',
+        description:
+          'Slow-braised wild boar ragù, juniper berry essence, and 36-month grated Pecorino Toscano.',
       },
       {
         name: 'Traditional Espresso Tiramisu',
-        price: '$16',
+        price: '₹1,500',
         category: 'Desserts',
-        description: 'Mascarpone zabaglione layered with Illy espresso soaked savoiardi and Valrhona cocoa.',
+        description:
+          'Mascarpone zabaglione layered with Illy espresso soaked savoiardi and Valrhona cocoa.',
       },
     ],
+
     reviews: [
       {
         id: 'rev-4',
         userName: 'David Miller',
-        userAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
+        userAvatar:
+          'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
         rating: 5,
         date: '2 days ago',
-        comment: 'The Tartufo pasta is pure indulgence. You can literally watch them kneading the dough near the open kitchen counter. Service was impeccable!',
+        comment:
+          'The Tartufo pasta is pure indulgence. You can literally watch them kneading the dough near the open kitchen counter. Service was impeccable!',
         tag: 'Verified Diner',
       },
     ],
   },
+
   {
     id: 'the-gilded-cut',
     name: 'The Gilded Cut Steakhouse',
@@ -308,12 +387,13 @@ export const RESTAURANTS: Restaurant[] = [
     cuisine: 'Steakhouse & Grill',
     rating: 4.8,
     reviewCount: 418,
-    priceRange: '$$$$',
+    priceRange: '₹₹₹₹',
     neighborhood: 'Financial & Waterfront District',
     city: 'Metropolis',
     address: '77 Harbourfront Way, Penthouse Level',
     distance: '2.1 miles away',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
+    image:
+      'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80',
@@ -322,54 +402,69 @@ export const RESTAURANTS: Restaurant[] = [
     featured: false,
     trending: true,
     michelinGuide: false,
-    tags: ['Dry Aged Steaks', 'Waterfront View', 'Whiskey Bar', 'Private Dining Rooms'],
+    tags: [
+      'Dry Aged Steaks',
+      'Waterfront View',
+      'Whiskey Bar',
+      'Private Dining Rooms',
+    ],
     availableSlots: ['6:30 PM', '7:15 PM', '8:00 PM', '8:45 PM'],
-    description: 'An architectural marvel celebrating beef aging and woodfire grilling. Every prime cut is dry-aged on site in our Himalayan salt-brick room for a minimum of 45 days, delivering unmatched tenderness and concentrated umami.',
+    description:
+      'An architectural marvel celebrating beef aging and woodfire grilling. Every prime cut is dry-aged on site in our Himalayan salt-brick room for a minimum of 45 days, delivering unmatched tenderness and concentrated umami.',
     chef: 'Chef Alexander Vance',
     hours: 'Daily: 4:30 PM - 12:00 AM',
     dressCode: 'Business Formal',
     parking: 'Valet Service & Reserved Marina Garage',
-    phone: '+1 (555) 902-6633',
+    phone: '+1 (555) 672-3344',
+
     menu: [
       {
         name: '45-Day Dry-Aged Bone-In Ribeye (22oz)',
-        price: '$86',
+        price: '₹8,100',
         category: 'Mains',
-        description: 'Prime USDA certified black angus charred over white oak coals, roasted marrow bone.',
+        description:
+          'Prime USDA certified black angus charred over white oak coals, roasted marrow bone.',
         tag: 'Signature',
       },
       {
         name: 'Japanese A5 Olive Wagyu Striploin (6oz)',
-        price: '$135',
+        price: '₹12,700',
         category: 'Mains',
-        description: 'Sanuki Wagyu raised on roasted olive mash, served with wasabi stems and smoked Maldon salt.',
+        description:
+          'Sanuki Wagyu raised on roasted olive mash, served with wasabi stems and smoked Maldon salt.',
         tag: 'Chef Pick',
       },
       {
         name: 'Jumbo Lump Crab Cake',
-        price: '$32',
+        price: '₹3,000',
         category: 'Starters',
-        description: 'Maryland blue crab with preserved lemon remoulade and micro mustard greens.',
+        description:
+          'Maryland blue crab with preserved lemon remoulade and micro mustard greens.',
       },
       {
         name: 'Black Truffle Mac & Gruyère',
-        price: '$24',
+        price: '₹2,300',
         category: 'Starters',
-        description: 'Cavatappi folded in sharp cave-aged Gruyère, fontina, and generous black summer truffles.',
+        description:
+          'Cavatappi folded in sharp cave-aged Gruyère, fontina, and generous black summer truffles.',
       },
     ],
+
     reviews: [
       {
         id: 'rev-5',
         userName: 'Jonathan Ross',
-        userAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
+        userAvatar:
+          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
         rating: 5,
         date: '5 days ago',
-        comment: 'Unrivaled steak experience. The 45-day ribeye was fork-tender with exquisite charring. The cocktail list features rare bourbons you cannot find elsewhere.',
+        comment:
+          'Unrivaled steak experience. The 45-day ribeye was fork-tender with exquisite charring. The cocktail list features rare bourbons you cannot find elsewhere.',
         tag: 'Verified Diner',
       },
     ],
   },
+
   {
     id: 'haveli-royal-dining',
     name: 'Haveli Royal Kitchen',
@@ -377,12 +472,13 @@ export const RESTAURANTS: Restaurant[] = [
     cuisine: 'Royal Indian',
     rating: 4.88,
     reviewCount: 375,
-    priceRange: '$$$',
+    priceRange: '₹₹₹',
     neighborhood: 'Uptown Cultural Park',
     city: 'Metropolis',
     address: '501 Amber Palace Road, Suite A',
     distance: '2.4 miles away',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1000&q=80',
+    image:
+      'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1000&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
@@ -391,55 +487,76 @@ export const RESTAURANTS: Restaurant[] = [
     featured: true,
     trending: false,
     michelinGuide: false,
-    tags: ['Dum Biryani', 'Clay Tandoor', 'Vegetarian Delights', 'Live Sitar Music'],
-    availableSlots: ['5:30 PM', '6:30 PM', '7:15 PM', '8:00 PM', '9:00 PM'],
-    description: 'Immerse your senses in royal Indian dining inspired by the historic royal courts of Lucknow and Rajasthan. Slow-simmered dum gravies, saffron-infused breads, and succulent tandoor delicacies prepared by fifth-generation culinary masters.',
+    tags: [
+      'Dum Biryani',
+      'Clay Tandoor',
+      'Vegetarian Delights',
+      'Live Sitar Music',
+    ],
+    availableSlots: [
+      '5:30 PM',
+      '6:30 PM',
+      '7:15 PM',
+      '8:00 PM',
+      '9:00 PM',
+    ],
+    description:
+      'Immerse your senses in royal Indian dining inspired by the historic royal courts of Lucknow and Rajasthan. Slow-simmered dum gravies, saffron-infused breads, and succulent tandoor delicacies prepared by fifth-generation culinary masters.',
     chef: 'Master Chef Imran Qureshi',
     hours: 'Tue - Sun: 12:00 PM - 3:00 PM, 5:30 PM - 11:00 PM',
     dressCode: 'Smart Casual',
     parking: 'Free Customer Lot on Site',
     phone: '+1 (555) 438-9900',
+
     menu: [
       {
         name: 'Galouti Kebab with Sheermal',
-        price: '$26',
+        price: '₹2,600',
         category: 'Starters',
-        description: 'Melt-in-mouth smoked lamb patties infused with 32 secret royal spices, saffron flatbread.',
+        description:
+          'Melt-in-mouth smoked lamb patties infused with 32 secret royal spices, saffron flatbread.',
         tag: 'Signature',
       },
       {
         name: 'Murgh Awadhi Dum Biryani',
-        price: '$34',
+        price: '₹3,200',
         category: 'Mains',
-        description: 'Aged basmati rice sealed in pastry dough with spring chicken, saffron milk, and rose water essence.',
+        description:
+          'Aged basmati rice sealed in pastry dough with spring chicken, saffron milk, and rose water essence.',
         tag: 'Signature',
       },
       {
         name: 'Dal Haveli (Slow-cooked 24hrs)',
-        price: '$22',
+        price: '₹2,100',
         category: 'Mains',
-        description: 'Black lentils slowly simmered overnight on charcoal hearth with churned butter and tomato velvet.',
+        description:
+          'Black lentils slowly simmered overnight on charcoal hearth with churned butter and tomato velvet.',
         tag: 'Chef Pick',
       },
       {
         name: 'Royal Shahi Tukda & Rabdi',
-        price: '$15',
+        price: '₹1,400',
         category: 'Desserts',
-        description: 'Ghee-crisped bread steeped in saffron milk syrup, crowned with condensed rabdi and edible silver leaf.',
+        description:
+          'Ghee-crisped bread steeped in saffron milk syrup, crowned with condensed rabdi and edible silver leaf.',
       },
     ],
+
     reviews: [
       {
         id: 'rev-6',
         userName: 'Aarav Sharma',
-        userAvatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80',
+        userAvatar:
+          'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80',
         rating: 5,
         date: '4 days ago',
-        comment: 'Authentic royal flavours that are almost impossible to find elsewhere. The Dum Biryani sealed with purdah pastry dough filled the entire table with the most intoxicating aroma.',
+        comment:
+          'Authentic royal flavours that are almost impossible to find elsewhere. The Dum Biryani sealed with purdah pastry dough filled the entire table with the most intoxicating aroma.',
         tag: 'Family Gathering',
       },
     ],
   },
+
   {
     id: 'aegean-coastal',
     name: 'Aegean Blue Garden',
@@ -447,12 +564,13 @@ export const RESTAURANTS: Restaurant[] = [
     cuisine: 'Mediterranean & Greek',
     rating: 4.82,
     reviewCount: 298,
-    priceRange: '$$$',
+    priceRange: '₹₹₹',
     neighborhood: 'Harbor Promenade',
     city: 'Metropolis',
     address: '18 Seaside Boardwalk, Pier 4',
     distance: '3.0 miles away',
-    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80',
+    image:
+      'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
@@ -461,50 +579,64 @@ export const RESTAURANTS: Restaurant[] = [
     featured: false,
     trending: true,
     michelinGuide: false,
-    tags: ['Open-Air Patio', 'Fresh Catch', 'Vegetarian Friendly', 'Sunset Views'],
+    tags: [
+      'Open-Air Patio',
+      'Fresh Catch',
+      'Vegetarian Friendly',
+      'Sunset Views',
+    ],
     availableSlots: ['5:00 PM', '6:00 PM', '7:00 PM', '8:15 PM'],
-    description: 'Bask in whitewashed elegance with blue shutters and flowering bougainvillea. Aegean Blue Garden serves wild Mediterranean branzino grilled over olive wood embers, handmade dips, and organic produce sourced directly from coastal family farms.',
+    description:
+      'Bask in whitewashed elegance with blue shutters and flowering bougainvillea. Aegean Blue Garden serves wild Mediterranean branzino grilled over olive wood embers, handmade dips, and organic produce sourced directly from coastal family farms.',
     chef: 'Chef Elena Papadopoulos',
     hours: 'Tue - Sun: 11:30 AM - 10:30 PM',
     dressCode: 'Resort Casual',
     parking: 'Harbor Deck Parking',
     phone: '+1 (555) 762-1133',
+
     menu: [
       {
         name: 'Whole Mediterranean Branzino (Lavraki)',
-        price: '$48',
+        price: '₹4,500',
         category: 'Mains',
-        description: 'Deboned sea bass grilled over wood embers, wild Greek oregano, capers, and extra-virgin kalamata lemon oil.',
+        description:
+          'Deboned sea bass grilled over wood embers, wild Greek oregano, capers, and extra-virgin kalamata lemon oil.',
         tag: 'Signature',
       },
       {
         name: 'Santorini Fava & Charred Octopus',
-        price: '$29',
+        price: '₹2,700',
         category: 'Starters',
-        description: 'Tender octopus glazed with Greek honey vinegar, paired with golden yellow split pea puree and pickled shallots.',
+        description:
+          'Tender octopus glazed with Greek honey vinegar, paired with golden yellow split pea puree and pickled shallots.',
         tag: 'Chef Pick',
       },
       {
         name: 'Spanakopita Crisp Wheel',
-        price: '$19',
+        price: '₹1,800',
         category: 'Starters',
-        description: 'Flaky handmade phyllo coil filled with mountain greens, wild spinach, dill, and barrel-aged Dodoni feta.',
+        description:
+          'Flaky handmade phyllo coil filled with mountain greens, wild spinach, dill, and barrel-aged Dodoni feta.',
       },
       {
         name: 'Pistachio Honey Baklava Gelato',
-        price: '$16',
+        price: '₹1,500',
         category: 'Desserts',
-        description: 'Crisp phyllo leaves layered with Aegina pistachios, thyme honey, and house-churned sheep milk gelato.',
+        description:
+          'Crisp phyllo leaves layered with Aegina pistachios, thyme honey, and house-churned sheep milk gelato.',
       },
     ],
+
     reviews: [
       {
         id: 'rev-7',
         userName: 'Chloe Bennett',
-        userAvatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80',
+        userAvatar:
+          'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80',
         rating: 5,
         date: '1 week ago',
-        comment: 'Dining outdoors right as the sun sets over the water made us feel like we were vacationing in Mykonos. The grilled branzino was fresh and flavorful!',
+        comment:
+          'Dining outdoors right as the sun sets over the water made us feel like we were vacationing in Mykonos. The grilled branzino was fresh and flavorful!',
         tag: 'Verified Diner',
       },
     ],
@@ -516,7 +648,8 @@ export const INITIAL_RESERVATIONS: Reservation[] = [
     id: 'res-101',
     restaurantId: 'aurora-bistro',
     restaurantName: 'L’Aura Parisienne',
-    restaurantImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80',
+    restaurantImage:
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80',
     restaurantNeighborhood: 'Downtown Heritage Quarter',
     restaurantAddress: '428 Boulevard Saint-Germain, Downtown',
     guests: 2,
@@ -526,7 +659,7 @@ export const INITIAL_RESERVATIONS: Reservation[] = [
     occasion: 'Anniversary Celebration',
     specialRequests: 'Quiet romantic table by window please.',
     guestName: 'Sushmita Maurya',
-    guestEmail: 'sushmita@example.com',
+    guestEmail: 'mauryasushmita9422@gmail.com',
     guestPhone: '+1 (555) 890-1234',
     status: 'confirmed',
     bookingRef: 'DT-89420',
@@ -535,11 +668,31 @@ export const INITIAL_RESERVATIONS: Reservation[] = [
 ];
 
 export const SEATING_OPTIONS = [
-  { id: 'main', name: 'Main Dining Room', desc: 'Lively atmosphere in the heart of the restaurant' },
-  { id: 'window', name: 'Romantic Window Table', desc: 'Scenic outside views with intimate ambience' },
-  { id: 'patio', name: 'Outdoor Garden / Terrace', desc: 'Open-air al fresco dining surrounded by greenery' },
-  { id: 'counter', name: 'Chef’s Interactive Counter', desc: 'Front-row view of the culinary artistry' },
-  { id: 'private', name: 'Private Alcove', desc: 'Exclusive secluded booth for quiet dining' },
+  {
+    id: 'main',
+    name: 'Main Dining Room',
+    desc: 'Lively atmosphere in the heart of the restaurant',
+  },
+  {
+    id: 'window',
+    name: 'Romantic Window Table',
+    desc: 'Scenic outside views with intimate ambience',
+  },
+  {
+    id: 'patio',
+    name: 'Outdoor Garden / Terrace',
+    desc: 'Open-air al fresco dining surrounded by greenery',
+  },
+  {
+    id: 'counter',
+    name: 'Chef’s Interactive Counter',
+    desc: 'Front-row view of the culinary artistry',
+  },
+  {
+    id: 'private',
+    name: 'Private Alcove',
+    desc: 'Exclusive secluded booth for quiet dining',
+  },
 ];
 
 export const OCCASIONS = [

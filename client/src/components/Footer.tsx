@@ -27,7 +27,7 @@ export default function Footer({ onSelectCuisine, onOpenPartnerModal }: FooterPr
           <div className="max-w-xl text-center lg:text-left">
             <div className="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>DineTable Epicure Club</span>
+              <span>HungryBear Epicure Club</span>
             </div>
             <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white">
               Unlock Secret Tables & Chef Flights
@@ -74,7 +74,7 @@ export default function Footer({ onSelectCuisine, onOpenPartnerModal }: FooterPr
                 <UtensilsCrossed className="w-4.5 h-4.5" />
               </div>
               <span className="text-xl font-bold font-serif text-white tracking-tight">
-                Dine<span className="text-amber-500">Table</span>
+                Hungry<span className="text-amber-500">Bear</span>
               </span>
             </div>
             <p className="text-stone-400 text-xs leading-relaxed max-w-sm">
@@ -169,7 +169,7 @@ export default function Footer({ onSelectCuisine, onOpenPartnerModal }: FooterPr
             <ul className="space-y-2 text-stone-400">
               <li>
                 <a href="#how-it-works" className="hover:text-amber-400 transition-colors">
-                  About DineTable
+                  About HungryBear
                 </a>
               </li>
               <li>
@@ -194,7 +194,7 @@ export default function Footer({ onSelectCuisine, onOpenPartnerModal }: FooterPr
         {/* Bottom copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
           <div>
-            © {new Date().getFullYear()} DineTable Inc. All rights reserved. Instant guaranteed restaurant reservations.
+            © {new Date().getFullYear()} HungryBear Inc. All rights reserved. Instant guaranteed restaurant reservations.
           </div>
           <div className="flex gap-6">
             <span>Terms of Service</span>

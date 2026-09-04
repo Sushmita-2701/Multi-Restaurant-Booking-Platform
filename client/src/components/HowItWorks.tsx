@@ -32,7 +32,7 @@ export default function HowItWorks() {
             <span>Effortless Dining Reservations</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-stone-900 tracking-tight">
-            How DineTable Works
+            How HungryBear Works
           </h2>
           <p className="text-stone-600 text-sm sm:text-base mt-3 leading-relaxed">
             We eliminate crowded waitlists and reservation guesswork. Enjoy direct table bookings in three effortless steps.
@@ -74,7 +74,7 @@ export default function HowItWorks() {
               <ShieldCheck className="w-7 h-7" />
             </div>
             <div>
-              <h4 className="font-serif font-bold text-base sm:text-lg">The DineTable Seating Guarantee</h4>
+              <h4 className="font-serif font-bold text-base sm:text-lg">The HungryBear Seating Guarantee</h4>
               <p className="text-xs text-stone-400 mt-0.5">
                 Every reservation is confirmed directly with the restaurant’s floor manager. No overbooking, zero hidden fees.
               </p>
