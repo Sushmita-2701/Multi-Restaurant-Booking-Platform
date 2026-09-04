@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from "react";
-import Navbar from "../components/Navbar.tsx";
+import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import AuthModal from "../components/AuthModal.tsx";
 import Hero from "../components/home/Hero.tsx";
@@ -33,7 +33,7 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-surface flex flex-col pt-0">
-            <Navbar />
+            <Header />
             <AuthModal />
             <main className="flex-1">
                 <Hero />

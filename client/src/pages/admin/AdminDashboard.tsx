@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from "react";
-import Navbar from "../../components/Navbar.tsx";
+import Navbar from "../../components/Header.tsx";
 import Footer from "../../components/Footer.tsx";
 import Loader from "../../components/Loader.tsx";
 import { useAppContext } from "../../context/AppContext.tsx";

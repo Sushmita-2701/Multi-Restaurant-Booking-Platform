@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import Navbar from "../components/Navbar.tsx";
+import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import RestaurantCard from "../components/RestaurantCard.tsx";
 import AuthModal from "../components/AuthModal.tsx";
@@ -115,7 +115,7 @@ export default function Search() {
 
     return (
         <div className="min-h-screen bg-surface flex flex-col pt-20">
-            <Navbar />
+            <Header />
             <AuthModal />
 
             {/* Sub-header / Search inputs */}

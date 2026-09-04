@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useAppContext } from "../context/AppContext.tsx";
-import Navbar from "../components/Navbar.tsx";
+import Navbar from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import AuthModal from "../components/AuthModal.tsx";
 import toast from "react-hot-toast";
