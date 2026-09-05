@@ -55,10 +55,11 @@ export default function Header({
 
   return (
     <header className="sticky top-0 z-50 w-full max-w-full overflow-x-clip bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-sm">
+      
       {/* ================= TOP BANNER ================= */}
-      <div className="w-full bg-amber-900 text-amber-50 text-[11px] sm:text-xs py-1.5 px-3 sm:px-4 text-center font-medium tracking-wide">
-        <div className="flex items-center justify-center gap-1.5 sm:gap-2">
-          <Sparkles className="w-3.5 h-3.5 shrink-0 text-amber-300 animate-pulse" />
+      <div className="w-full bg-amber-900 text-amber-50">
+        <div className="mx-auto flex min-h-[30px] w-full max-w-7xl items-center justify-center gap-2 px-3 py-1 text-center text-[10px] font-medium tracking-wide sm:text-xs">
+          <Sparkles className="h-3.5 w-3.5 shrink-0 text-amber-300" />
 
           <span className="truncate">
             Reserve tables at top Michelin & chef-driven restaurants
@@ -68,53 +69,63 @@ export default function Header({
             </span>
           </span>
 
-          <span className="hidden md:inline-flex shrink-0 bg-amber-800/80 px-2 py-0.5 rounded-full text-[11px] font-semibold text-amber-200">
+          <span className="hidden shrink-0 rounded-full bg-amber-800/80 px-2 py-0.5 text-[10px] font-semibold text-amber-200 sm:inline-block">
             No Booking Fees
           </span>
         </div>
       </div>
 
       {/* ================= MAIN NAVBAR ================= */}
-      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-2 min-w-0 h-16 sm:h-[72px]">
+      <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8">
+        <div className="flex h-[72px] w-full items-center gap-3">
+
           {/* ================= LOGO ================= */}
           <button
             type="button"
             onClick={handleLogoClick}
-            className="flex items-center gap-2 sm:gap-3 cursor-pointer group min-w-0 flex-1 text-left"
+            className="
+              group
+              flex
+              w-[220px]
+              shrink-0
+              items-center
+              gap-3
+              text-left
+              cursor-pointer
+              xl:w-[240px]
+            "
             aria-label="Go to homepage"
           >
             {/* Logo Icon */}
-            <div className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-gradient-to-tr from-amber-600 to-amber-500 flex items-center justify-center text-white shadow-md shadow-amber-600/20 group-hover:scale-105 transition-transform duration-200">
-              <UtensilsCrossed className="w-5 h-5" />
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-amber-600 to-amber-500 text-white shadow-md shadow-amber-600/20 transition-transform duration-200 group-hover:scale-105">
+              <UtensilsCrossed className="h-5 w-5" />
             </div>
 
             {/* Logo Text */}
             <div className="min-w-0">
-              <div className="flex items-center gap-1.5 min-w-0">
-                <span className="text-[20px] sm:text-2xl font-bold tracking-tight text-stone-900 font-serif whitespace-nowrap">
+              <div className="flex items-center gap-1.5">
+                <span className="whitespace-nowrap font-serif text-[21px] font-bold tracking-tight text-stone-900 xl:text-2xl">
                   Hungry<span className="text-amber-600">Bear</span>
                 </span>
 
-                {/* Hide on small mobile */}
-                <span className="hidden sm:inline-block bg-amber-100 text-amber-800 text-[10px] font-bold px-1.5 py-0.5 rounded tracking-wide uppercase whitespace-nowrap">
+                <span className="hidden whitespace-nowrap rounded bg-amber-100 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-amber-800 xl:inline-block">
                   Reservations
                 </span>
               </div>
 
-              {/* Hide on mobile */}
-              <p className="hidden sm:block text-[11px] text-stone-500">
+              <p className="hidden text-[11px] leading-tight text-stone-500 sm:block">
                 Curated Dining & Fine Tables
               </p>
             </div>
           </button>
 
           {/* ================= DESKTOP NAVIGATION ================= */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-medium text-stone-700 shrink-0">
+          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-4 text-sm font-medium text-stone-700 lg:flex xl:gap-6">
+            
             <button
               type="button"
               onClick={() => scrollToSection('restaurants-list')}
-              className="hover:text-amber-600 transition-colors cursor-pointer whitespace-nowrap"
+              className="whitespace-nowrap transition-colors hover:text-amber-600"
             >
               Explore Tables
             </button>
@@ -122,7 +133,7 @@ export default function Header({
             <button
               type="button"
               onClick={() => scrollToSection('cuisines-section')}
-              className="hover:text-amber-600 transition-colors cursor-pointer whitespace-nowrap"
+              className="whitespace-nowrap transition-colors hover:text-amber-600"
             >
               Popular Cuisines
             </button>
@@ -130,11 +141,11 @@ export default function Header({
             <button
               type="button"
               onClick={() => scrollToSection('special-offers')}
-              className="hover:text-amber-600 transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap"
+              className="flex items-center gap-1.5 whitespace-nowrap transition-colors hover:text-amber-600"
             >
               <span>Special Offers</span>
 
-              <span className="bg-red-50 text-red-600 text-[10px] font-bold px-1.5 py-0.5 rounded-full border border-red-200">
+              <span className="rounded-full border border-red-200 bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-red-600">
                 Hot
               </span>
             </button>
@@ -142,25 +153,27 @@ export default function Header({
             <button
               type="button"
               onClick={() => scrollToSection('how-it-works')}
-              className="hover:text-amber-600 transition-colors cursor-pointer whitespace-nowrap"
+              className="whitespace-nowrap transition-colors hover:text-amber-600"
             >
               How It Works
             </button>
           </nav>
 
           {/* ================= RIGHT ACTIONS ================= */}
-          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+
             {/* Search */}
             <button
               type="button"
               onClick={onOpenSearch}
               aria-label="Search restaurants"
               title="Search restaurants"
-              className="p-2 rounded-xl text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition-colors cursor-pointer shrink-0"
+              className="flex shrink-0 items-center rounded-xl p-2 text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900"
             >
-              <Search className="w-5 h-5" />
+              <Search className="h-5 w-5" />
 
-              <span className="hidden xl:inline text-stone-500 text-xs ml-1">
+              {/* Search text only on very large screens */}
+              <span className="ml-2 hidden whitespace-nowrap text-xs font-medium text-stone-500 2xl:inline">
                 Search restaurant or cuisine...
               </span>
             </button>
@@ -171,12 +184,12 @@ export default function Header({
               onClick={onOpenSaved}
               aria-label="Saved restaurants"
               title="Saved Restaurants"
-              className="relative p-2 rounded-xl text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition-colors cursor-pointer shrink-0"
+              className="relative shrink-0 rounded-xl p-2 text-stone-600 transition-colors hover:bg-stone-100 hover:text-stone-900"
             >
-              <Heart className="w-5 h-5" />
+              <Heart className="h-5 w-5" />
 
               {savedCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 bg-rose-500 text-white text-[9px] font-bold min-w-4 h-4 px-1 rounded-full flex items-center justify-center ring-2 ring-white">
+                <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-rose-500 px-1 text-[9px] font-bold text-white ring-2 ring-white">
                   {savedCount}
                 </span>
               )}
@@ -191,60 +204,33 @@ export default function Header({
               className="
                 relative
                 flex
+                h-10
+                w-10
+                shrink-0
                 items-center
                 justify-center
-                gap-2
-                bg-stone-900
-                hover:bg-stone-800
-                text-white
-                w-10
-                h-10
-                sm:w-auto
-                sm:h-auto
-                sm:px-3.5
-                sm:py-2
                 rounded-xl
-                text-xs
-                sm:text-sm
-                font-semibold
-                transition-all
+                bg-stone-900
+                text-white
                 shadow-sm
-                cursor-pointer
+                transition-all
+                hover:bg-stone-800
                 active:scale-95
-                shrink-0
+                sm:h-auto
+                sm:w-auto
+                sm:gap-2
+                sm:px-3
+                sm:py-2
               "
             >
-              <CalendarCheck className="w-4.5 h-4.5 text-amber-400" />
+              <CalendarCheck className="h-4 w-4 text-amber-400" />
 
-              {/* Hide text on mobile */}
-              <span className="hidden sm:inline whitespace-nowrap">
+              <span className="hidden whitespace-nowrap text-xs font-semibold sm:inline">
                 My Bookings
               </span>
 
               {reservationCount > 0 && (
-                <span
-                  className="
-                    absolute
-                    -top-1
-                    -right-1
-                    sm:static
-                    bg-amber-500
-                    text-stone-950
-                    font-bold
-                    text-[10px]
-                    sm:text-[11px]
-                    min-w-4
-                    h-4
-                    px-1
-                    rounded-full
-                    flex
-                    items-center
-                    justify-center
-                    ring-2
-                    ring-white
-                    sm:ring-0
-                  "
-                >
+                <span className="absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-amber-500 px-1 text-[9px] font-bold text-stone-950 ring-2 ring-white sm:static sm:ring-0">
                   {reservationCount}
                 </span>
               )}
@@ -256,61 +242,53 @@ export default function Header({
               onClick={onOpenPartnerModal}
               className="
                 hidden
-                xl:flex
+                shrink-0
                 items-center
-                gap-1.5
+                rounded-xl
                 border
                 border-amber-600/30
-                text-amber-800
-                hover:bg-amber-50
                 px-3
                 py-2
-                rounded-xl
                 text-xs
                 font-semibold
+                text-amber-800
                 transition-colors
-                cursor-pointer
-                shrink-0
-                whitespace-nowrap
+                hover:bg-amber-50
+                xl:flex
               "
             >
               For Restaurants
             </button>
 
-            {/* Mobile Menu */}
+            {/* Mobile / Tablet Menu */}
             <button
               type="button"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
               aria-label={
-                mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'
+                mobileMenuOpen
+                  ? 'Close navigation menu'
+                  : 'Open navigation menu'
               }
-              className="
-                lg:hidden
-                p-2
-                rounded-lg
-                text-stone-600
-                hover:bg-stone-100
-                cursor-pointer
-                shrink-0
-              "
+              className="shrink-0 rounded-lg p-2 text-stone-600 transition-colors hover:bg-stone-100 lg:hidden"
             >
               {mobileMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className="h-6 w-6" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="h-6 w-6" />
               )}
             </button>
           </div>
         </div>
 
-        {/* ================= MOBILE MENU ================= */}
+        {/* ================= MOBILE / TABLET MENU ================= */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-stone-200 py-3 sm:py-4 animate-in slide-in-from-top-2 duration-200">
+          <div className="border-t border-stone-200 py-3 lg:hidden">
             <div className="space-y-1">
+
               <button
                 type="button"
                 onClick={() => scrollToSection('restaurants-list')}
-                className="w-full text-left px-3 py-3 text-sm font-medium text-stone-800 hover:bg-stone-100 rounded-lg transition-colors"
+                className="w-full rounded-lg px-3 py-3 text-left text-sm font-medium text-stone-800 transition-colors hover:bg-stone-100"
               >
                 Explore Tables
               </button>
@@ -318,7 +296,7 @@ export default function Header({
               <button
                 type="button"
                 onClick={() => scrollToSection('cuisines-section')}
-                className="w-full text-left px-3 py-3 text-sm font-medium text-stone-800 hover:bg-stone-100 rounded-lg transition-colors"
+                className="w-full rounded-lg px-3 py-3 text-left text-sm font-medium text-stone-800 transition-colors hover:bg-stone-100"
               >
                 Popular Cuisines
               </button>
@@ -326,7 +304,7 @@ export default function Header({
               <button
                 type="button"
                 onClick={() => scrollToSection('special-offers')}
-                className="w-full text-left px-3 py-3 text-sm font-medium text-stone-800 hover:bg-stone-100 rounded-lg transition-colors"
+                className="w-full rounded-lg px-3 py-3 text-left text-sm font-medium text-stone-800 transition-colors hover:bg-stone-100"
               >
                 Special Dining Offers
               </button>
@@ -334,35 +312,23 @@ export default function Header({
               <button
                 type="button"
                 onClick={() => scrollToSection('how-it-works')}
-                className="w-full text-left px-3 py-3 text-sm font-medium text-stone-800 hover:bg-stone-100 rounded-lg transition-colors"
+                className="w-full rounded-lg px-3 py-3 text-left text-sm font-medium text-stone-800 transition-colors hover:bg-stone-100"
               >
                 How It Works
               </button>
-            </div>
 
-            {/* Restaurant Partner */}
-            <div className="pt-3 mt-2 border-t border-stone-100">
-              <button
-                type="button"
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenPartnerModal();
-                }}
-                className="
-                  w-full
-                  py-2.5
-                  bg-amber-50
-                  hover:bg-amber-100
-                  text-amber-800
-                  font-semibold
-                  text-xs
-                  rounded-lg
-                  text-center
-                  transition-colors
-                "
-              >
-                For Restaurants / Owners
-              </button>
+              <div className="mt-2 border-t border-stone-100 pt-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    onOpenPartnerModal();
+                  }}
+                  className="w-full rounded-lg bg-amber-50 py-2.5 text-center text-xs font-semibold text-amber-800 transition-colors hover:bg-amber-100"
+                >
+                  For Restaurants / Owners
+                </button>
+              </div>
             </div>
           </div>
         )}

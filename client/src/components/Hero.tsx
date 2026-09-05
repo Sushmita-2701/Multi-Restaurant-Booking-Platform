@@ -71,12 +71,30 @@ export default function Hero({
         {/* Main Heading */}
 {/* Main Heading */}
 <div className="text-center max-w-4xl mx-auto">
-  <h1 className="m-0 text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight font-serif leading-none">
-    Reserve Unforgettable Tables at{' '}
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500">
-      Top-Rated Restaurants
-    </span>
-  </h1>
+  <h1
+  className="
+    relative
+    z-10
+    m-0
+    mx-auto
+    w-full
+    max-w-6xl
+    px-4
+    text-center
+    text-3xl
+    sm:text-5xl
+    lg:text-6xl
+    font-bold
+    tracking-tight
+    font-serif
+    leading-tight
+  "
+>
+  Reserve Unforgettable Tables at{" "}
+  <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500">
+    Top-Rated Restaurants
+  </span>
+</h1>
 
   <p className="m-0 mt-0 text-stone-300 text-sm sm:text-lg max-w-2xl mx-auto font-light leading-normal">
     Discover award-winning tasting menus, intimate neighborhood bistros, and vibrant rooftop lounges.
