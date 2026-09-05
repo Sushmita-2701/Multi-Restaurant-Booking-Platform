@@ -91,9 +91,9 @@ export default function Hero({
   "
 >
   Reserve Unforgettable Tables at{" "}
-  <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500">
-    Top-Rated Restaurants
-  </span>
+ 
+  Top-Rated Restaurants
+
 </h1>
 
   <p className="m-0 mt-0 text-stone-300 text-sm sm:text-lg max-w-2xl mx-auto font-light leading-normal">
